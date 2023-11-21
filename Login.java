@@ -1,7 +1,6 @@
 public class Login{
     public static class Attendance {
-        private String
-                studentName;
+        private String studentName;
         private int totalClasses;
         private int classesAttended;
         public Attendance(String studentName, int totalClasses, int classesAttended) {
