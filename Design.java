@@ -21,7 +21,7 @@ public class Design extends JFrame {
             userText.setBounds(100,20,165,25);
             panel.add(userText);
 
-            JLabel userIDLabel= new JLabel("User ID");
+            JLabel userIDLabel= new JLabel("User ID/ADM NO");
             userIDLabel.setBounds(10,50,80,25);
             panel.add(userIDLabel);
 
@@ -36,6 +36,8 @@ public class Design extends JFrame {
             JPasswordField passwordText=new JPasswordField();
             passwordText.setBounds(100,80,165,25);
             panel.add(passwordText);
+
+
             frame.setVisible(true) ;
 
 
