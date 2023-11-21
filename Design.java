@@ -1,6 +1,8 @@
 import javax.swing.*;
 import javax.swing.JOptionPane;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class Design extends JFrame {
@@ -38,6 +40,27 @@ public class Design extends JFrame {
             panel.add(passwordText);
             frame.setVisible(true) ;
 
+            JButton loginButton = new JButton("Login");
+            loginButton.setBounds(10, 110, 80, 25);
+            panel.add(loginButton);
+
+            loginButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    // Your login logic goes here
+                    String user = userText.getText();
+                    String userId = userIDText.getText();
+                    char[] password = passwordText.getPassword();
+
+                    // Example logic, replace with your own authentication process
+                    if (user.equals("admin") && userId.equals("12345") && new String(password).equals("password")) {
+                        JOptionPane.showMessageDialog(frame, "Login Successful!");
+                    } else {
+                        JOptionPane.showMessageDialog(frame, "Invalid credentials.");
+                    }
+                }
+            });
+
+            frame.setVisible(true);
 
 
 
