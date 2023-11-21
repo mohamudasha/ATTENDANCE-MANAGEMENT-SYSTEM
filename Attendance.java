@@ -47,6 +47,11 @@ public class Attendance {
                     this.Lecname = Lecname;
                 }
 
+                @java.lang.Override
+                public int getAdminumber() {
+                    return super.getAdminumber();
+                }
+
                 public String getLecname() {
                     return Lecname;
                 }
