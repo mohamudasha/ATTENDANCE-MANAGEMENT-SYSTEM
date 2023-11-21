@@ -1,16 +1,19 @@
 public class Course extends Attendance{
     private String name;
-    private String admin;
+    private String Coursecode;
 
-    public Course(String name,String admin,int adminNumber,String Sname){
-        super(adminNumber,Sname);
+    public Course(String name,int admissionNumber,String sName,String Coursecode){
+        super(admissionNumber,sName);
         this.name=name;
-        this.admin=admin;
+        this.Coursecode=Coursecode;
     }
     public String getName(){
         return name;
     }
-    public String getAdmin(){
-        return admin;
-    }}
+    public String getCoursecode(){
+        return Coursecode;
+    }
+
+
+}
 

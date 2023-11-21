@@ -1,19 +1,25 @@
-public class Attendance {
-    private int adminNumber;
-    private String Sname;
+public abstract class Attendance {
+    private int admissionNumber;
+    private String sName;
 
-    public Attendance(int adminNumber, String Sname) {
-        this.adminNumber = adminNumber;
-        this.Sname = Sname;
+    public Attendance(int admissionNumber, String sName) {
+        this.admissionNumber = admissionNumber;
+        this.sName = sName;
     }
 
-    public int getAdminnumber() {
-        return adminNumber;
+    public  int getAdmissionNumber(){
+        return admissionNumber;
+    } ;
+
+
+
+    public String getsName() {
+        return sName;
     }
 
-    public String getSname() {
-        return Sname;
-    }
+
+
+
 }
 
 
