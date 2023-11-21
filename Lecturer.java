@@ -1,5 +1,5 @@
 public class Lecturer extends Attendance {
-    private String Lecname;
+    private final String Lecname;
 
     public Lecturer(String Lecname, int admissionNumber, String sName) {
         super(admissionNumber, sName);
