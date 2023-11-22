@@ -21,7 +21,7 @@ public class Hours extends Attendance{
         return absentHours;
     }
     public String getStatus(){
-        if(absentHours==10){
+        if(absentHours>=10){
             return "Bad";
         }else{
             return "Good";
