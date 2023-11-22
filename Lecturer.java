@@ -1,9 +1,11 @@
 public class Lecturer extends Attendance {
-    private final String Lecname;
+    private String Lecname;
+    private Integer LecID;
 
-    public Lecturer(String Lecname, int admissionNumber, String sName) {
+    public Lecturer(String Lecname, int admissionNumber, String sName,Integer LecID) {
         super(admissionNumber, sName);
         this.Lecname = Lecname;
+        this.LecID=LecID;
     }
     @java.lang.Override
     public int getAdmissionNumber() {
@@ -12,6 +14,10 @@ public class Lecturer extends Attendance {
 
     public String getLecname() {
         return Lecname;
+    }
+
+    public Integer getLecID() {
+        return LecID;
     }
 }
 

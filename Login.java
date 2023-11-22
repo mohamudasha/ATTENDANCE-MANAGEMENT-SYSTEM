@@ -36,7 +36,8 @@ public class Login{
             }
         }
         public static void main(String[] args) {
-            Attendance student1 = new Attendance("John Doe", 20, 15);
+            Attendance student1 = new Attendance("Charlie Davidson", 30, 25);
+            Attendance student2 = new Attendance("Alaya Sane", 20, 15);
 
             // Accessing data using getter methods
             System.out.println("Student Name: " + student1.getStudentName());
