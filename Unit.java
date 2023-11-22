@@ -4,12 +4,7 @@ public class Unit extends Attendance{
     }
     public void getUnitName(){
     }
-
-
-
-
-
-    ;
+    return unitName;
     }
 
 
