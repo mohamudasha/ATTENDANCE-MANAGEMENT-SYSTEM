@@ -27,6 +27,4 @@ public class Hours extends Attendance{
             return "Good";
         }
     }
-
-
 }
