@@ -4,8 +4,8 @@ public class Hours extends Attendance{
     private int presentHours;
     private int absentHours;
     private String status;
-    public Hours(int hours,int presentHours,int absentHours,String status,int admissionNumber,String sName){
-        super(admissionNumber,sName);
+    public Hours(int hours,int presentHours,int absentHours,String status,int admissionNumber,String StudentName){
+        super(admissionNumber,StudentName);
         this.hours=hours;
         this.presentHours=presentHours;
         this.absentHours=absentHours;
