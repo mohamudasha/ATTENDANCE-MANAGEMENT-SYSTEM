@@ -1,6 +1,6 @@
 public class Lecturer extends Attendance {
-    private String Lecname;
-    private Integer LecID;
+    private final String Lecname;
+    private final Integer LecID;
 
     public Lecturer(String Lecname, int admissionNumber, String sName,Integer LecID) {
         super(admissionNumber, sName);
