@@ -3,8 +3,9 @@ public class Unit extends Attendance{
         super(admissionNumber,sName);
     }
     public void getUnitName(){
+        return unitName;
     }
-    return unitName;
+
     }
 
 
