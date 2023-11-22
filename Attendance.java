@@ -1,6 +1,6 @@
 public abstract class Attendance {
-    private final int admissionNumber;
-    private final String sName;
+    private int admissionNumber;
+    private String sName;
 
     public Attendance(int admissionNumber, String sName) {
         this.admissionNumber = admissionNumber;
