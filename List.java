@@ -1,6 +1,7 @@
+import javax.swing.*;
 import java.util.ArrayList;
 public class List {
-        public static void main(String[] args) {
+        public void main(String[] args) {
             //Below Students' Names' are stored
             ArrayList<String> StudentName = new ArrayList<String>();
             StudentName.add("Urvi");
@@ -19,7 +20,7 @@ public class List {
             //Below Lecturers' Names' are stored
             ArrayList<String> Lecname = new ArrayList<String>();
             Lecname.add("Susan");
-            Lecname.add("Jowie");
+            Lecname.add("Joan");
             Lecname.add("Leah");
             //Below Lecturer's IDs are stored
             ArrayList<Integer> LecID = new ArrayList<Integer>();
@@ -34,7 +35,7 @@ public class List {
 
 
 
-
+            
 
         }
     }
