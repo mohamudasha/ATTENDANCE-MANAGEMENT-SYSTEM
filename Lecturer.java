@@ -2,8 +2,8 @@ public class Lecturer extends Attendance {
     private final String Lecname;
     private final Integer LecID;
 
-    public Lecturer(String Lecname, int admissionNumber, String sName, Integer LecID) {
-        super(admissionNumber, sName);
+    public Lecturer(String Lecname, int admissionNumber, String StudentName, Integer LecID) {
+        super(admissionNumber, StudentName);
         this.Lecname = Lecname;
         this.LecID = LecID;
     }
@@ -15,11 +15,11 @@ public class Lecturer extends Attendance {
     public Integer getLecID() {
         return LecID;
     }
-    @Override
-    public void displaydetails()
-    {
-      System.out.println("Lecturer name"+ Lecname);
-      System.out.println("Lecturer ID"+LecID);
 
+
+    public void displayDetails() {
+        System.out.println("Lecturer details:");
+        System.out.println("Name: " + Lecname);
+        System.out.println("ID: " + LecID);
     }
 }

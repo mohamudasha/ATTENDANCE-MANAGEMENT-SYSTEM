@@ -1,11 +1,9 @@
 public class Unit extends Attendance{
-    private int unitName;
-    public Unit(int unitName,int admissionNumber,String sName)
-    {
-        super(admissionNumber,sName);
-
+    private String unitName;
+    public Unit(String unitName,int admissionNumber,String StudentName){
+        super(admissionNumber,StudentName);
     }
-    public int getUnitName(){
+    public String getUnitName(){
         return unitName;
     }
 
