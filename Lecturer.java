@@ -22,4 +22,5 @@ public class Lecturer extends Attendance {
         System.out.println("Name: " + Lecname);
         System.out.println("ID: " + LecID);
     }
+
 }

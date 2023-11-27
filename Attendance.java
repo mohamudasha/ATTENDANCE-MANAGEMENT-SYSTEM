@@ -19,7 +19,7 @@ public abstract class Attendance {
     public void displaydetails()
     {
         System.out.println("Admission Number"+admissionNumber);
-        System.out.println("Student Name"+sName);
+        System.out.println("Student Name"+StudentName);
     }
 
 

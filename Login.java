@@ -57,4 +57,5 @@ public class Login{
             System.out.println("Attendance Percentage: " + student1.calculateAttendancePercentage() + "%");
         }
     }
+
 }
