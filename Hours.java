@@ -1,3 +1,4 @@
+
 public class Hours extends Attendance{
 
     private int hours;
@@ -27,6 +28,4 @@ public class Hours extends Attendance{
             return "Good";
         }
     }
-
-
 }

@@ -15,11 +15,11 @@ public class Lecturer extends Attendance {
     public Integer getLecID() {
         return LecID;
     }
-
     @Override
-    public void displayDetails() {
-        System.out.println("Lecturer details:");
-        System.out.println("Name: " + Lecname);
-        System.out.println("ID: " + LecID);
+    public void displaydetails()
+    {
+      System.out.println("Lecturer name"+ Lecname);
+      System.out.println("Lecturer ID"+LecID);
+
     }
 }
