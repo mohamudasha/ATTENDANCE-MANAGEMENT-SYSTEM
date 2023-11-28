@@ -1,10 +1,10 @@
 public abstract class Attendance {
     private int admissionNumber;
-    private String sName;
+    private String StudentName;
 
-    public Attendance(int admissionNumber, String sName) {
+    public Attendance(int admissionNumber, String StudentName) {
         this.admissionNumber = admissionNumber;
-        this.sName = sName;
+        this.StudentName = StudentName;
     }
 
     public  int getAdmissionNumber(){
@@ -13,8 +13,13 @@ public abstract class Attendance {
 
 
 
-    public String getsName() {
-        return sName;
+    public String getStudentName() {
+        return StudentName;
+    }
+    public void displaydetails()
+    {
+        System.out.println("Admission Number"+admissionNumber);
+        System.out.println("Student Name"+StudentName);
     }
 
 

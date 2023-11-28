@@ -3,19 +3,19 @@ public class Login{
     // Static inner class 'Attendance' to manage student attendance details.
     public static class Attendance {
         // Private member variables to store student name, total classes, and classes attended.
-        private String studentName;
+        private String StudentName;
         private int totalClasses;
         private int classesAttended;
         //Constructor that analyzes the student name,total classes and classes attended
-        public Attendance(String studentName, int totalClasses, int classesAttended) {
-            this.studentName = studentName;
+        public Attendance(String StudentName, int totalClasses, int classesAttended) {
+            this.StudentName = StudentName;
             this.totalClasses = totalClasses;
             this.classesAttended = classesAttended;
         }
 
         // Getter method to retrieve and return student name
         public String getStudentName() {
-            return studentName;
+            return StudentName;
         }
         //Getter method to retrieve and return total number of classes
         public int getTotalClasses() {
@@ -57,4 +57,5 @@ public class Login{
             System.out.println("Attendance Percentage: " + student1.calculateAttendancePercentage() + "%");
         }
     }
+
 }
