@@ -7,12 +7,10 @@ public class Lecturer extends Attendance {
         this.Lecname = Lecname;
         this.LecID = LecID;
     }
-
     public String getLecname() {
-        return Lecname;
-    }
+        return Lecname;}
 
-    public Integer getLecID() {
+    public int getLecID() {
         return LecID;
     }
 

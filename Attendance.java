@@ -11,20 +11,14 @@ public abstract class Attendance {
         return admissionNumber;
     } ;
 
-
-
     public String getStudentName() {
         return StudentName;
     }
-    public void displaydetails()
+    public void displayDetails()
     {
         System.out.println("Admission Number"+admissionNumber);
         System.out.println("Student Name"+StudentName);
     }
-
-
-
-
 }
 
 
