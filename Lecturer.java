@@ -16,6 +16,7 @@ public class Lecturer extends Attendance {
 
 
     public void displayDetails() {
+        super.displayDetails();
         System.out.println("Lecturer details:");
         System.out.println("Name: " + Lecname);
         System.out.println("ID: " + LecID);
