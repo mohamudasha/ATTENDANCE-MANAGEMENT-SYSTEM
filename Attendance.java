@@ -2,18 +2,25 @@
     public  class Attendance {
         // Private member variables to store student name, total classes, and classes attended.
         private String StudentName;
+        private int StudentID;
         private int totalClasses;
         private int classesAttended;
         //Constructor that analyzes the student name,total classes and classes attended
-        public Attendance(String StudentName, int totalClasses, int classesAttended) {
+        public Attendance(String StudentName, int StudentID, int totalClasses) {
             this.StudentName = StudentName;
+            this.StudentID = StudentID;
             this.totalClasses = totalClasses;
             this.classesAttended = classesAttended;
         }
 
         // Getter method to retrieve and return student name
         public String getStudentName() {
+
             return StudentName;
+        }
+        public int getStudentID(){
+
+            return StudentID;
         }
         //Getter method to retrieve and return total number of classes
         public int getTotalClasses() {
@@ -48,6 +55,7 @@
 
             // Accessing and display of student attendance details using getter methods
             System.out.println("Student Name: " + student1.getStudentName());
+            System.out.println("Student ID: " + student1.getStudentID());
             System.out.println("Total Classes: " + student1.getTotalClasses());
             System.out.println("Classes Attended: " + student1.getClassesAttended());
             // Updating attendance and displaying the updated attendance percentage.

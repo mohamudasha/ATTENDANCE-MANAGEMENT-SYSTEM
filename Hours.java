@@ -4,7 +4,7 @@ public class Hours {
     private int presentHours;
     private int absentHours;
     private String status;
-    public Hours(int hours,int presentHours,int absentHours,String status){
+     Hours(int hours,int presentHours,int absentHours,String status){
 
         this.hours=hours;
         this.presentHours=presentHours;
