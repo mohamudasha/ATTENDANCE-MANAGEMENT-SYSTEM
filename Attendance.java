@@ -44,7 +44,7 @@
         // Main method to demonstrate the functionality of Attendance class.
         public static void main(String[] args) {
             // Creating an instance of Attendance.
-            Attendance student1 = new Attendance("John Doe", 20, 15);
+            Attendance student1 = new Attendance("Johnny Sane", 20, 15);
 
             // Accessing and display of student attendance details using getter methods
             System.out.println("Student Name: " + student1.getStudentName());
