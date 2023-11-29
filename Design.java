@@ -1,7 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Design extends JFrame implements ActionListener {
@@ -13,6 +14,7 @@ public class Design extends JFrame implements ActionListener {
         private static JTextField passwordText;
         private static JButton button;
         private static JLabel success;
+
         public static void main(String[] args) {
             JPanel panel= new JPanel();
             JFrame frame = new JFrame("ATTENDANCE MANAGEMENT SYSTEM");
@@ -54,8 +56,7 @@ public class Design extends JFrame implements ActionListener {
             success=new JLabel("");
             success.setBounds(100,150,300,25);
             panel.add(success);
-            frame.setVisible(true) ;
-
+            frame.setVisible(true);
         }
 
     @Override
@@ -64,8 +65,22 @@ public class Design extends JFrame implements ActionListener {
         String userID=userIDText.getText();
         String password= passwordText.getText();
         System.out.println(user+"," + userID +","+password);
-        if(user.equals("Urvi") && userID.equals("A1234") && password.equals("4321")){
-            success.setText("Login successful!");
+        if (user.equals("Urvi") && userID.equals("A1234") && password.equals("4321")) {
+            success.setText("Login successful!");}
+        if (user.equals("Terry") && userID.equals("A1235") && password.equals("#20213")) {
+            success.setText("Login successful!");}
+        if (user.equals("Vicky") && userID.equals("A1236") && password.equals("5050*")) {
+            success.setText("Login successful!");}
+        if (user.equals("Susan") && password.equals("Haiya")) {
+            success.setText("Login successful!");}
+        if (user.equals("Joan") && password.equals("What(!)")) {
+            success.setText("Login successful!");}
+        if (user.equals("Leah") && password.equals("Y@")) {
+            success.setText("Login successful!");}
+        else{System.out.println("Login failed!");
+
+        }
+
         }
 
 
@@ -73,7 +88,7 @@ public class Design extends JFrame implements ActionListener {
 
 
 
-    }}
+    }
 
 
 
