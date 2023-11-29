@@ -2,30 +2,30 @@ public class Password {
     private String password;
     private String StudentAdmNo;
     private Integer LecID;
-    public Password(String password,String StudentAdmNo) {
+    private Password(String password,String StudentAdmNo) {
         this.password = password;
         this.StudentAdmNo=StudentAdmNo;
 
     }
-    public Password(String password,Integer LecID){
+    private Password(String password,Integer LecID){
         this.password=password;
         this.LecID=LecID;
     }
-    public String getPassword() {
+    private String getPassword() {
         return password;
     }
-    public String getStudentAdmNo() {
+    private String getStudentAdmNo() {
         return StudentAdmNo;
     }
-    public Integer getLecID() {
+    private Integer getLecID() {
         return LecID;
     }
 
 
-    public void setPassword(String password) {
+    private void setPassword(String password) {
         this.password = password;
     }
-    public void setLecID(Integer LecID) {
+    private void setLecID(Integer LecID) {
         this.LecID = LecID;
     }
     public static void main(String[]args){
