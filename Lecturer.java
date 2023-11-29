@@ -1,25 +1,12 @@
-public class Lecturer extends Attendance {
-    private final String Lecname;
-    private final Integer LecID;
+public class Lecturer extends Person {
+     private Course course;
+     private Unit unit;
 
-    public Lecturer(String Lecname, int admissionNumber, String StudentName, Integer LecID) {
-        super(admissionNumber, StudentName);
-        this.Lecname = Lecname;
-        this.LecID = LecID;
-    }
-    public String getLecname() {
-        return Lecname;}
-
-    public int getLecID() {
-        return LecID;
+    public Course getCourse() {
+        return this.course;
     }
 
-
-    public void displayDetails() {
-        super.displayDetails();
-        System.out.println("Lecturer details:");
-        System.out.println("Name: " + Lecname);
-        System.out.println("ID: " + LecID);
+    public Unit getUnit() {
+        return this.unit;
     }
-
 }
