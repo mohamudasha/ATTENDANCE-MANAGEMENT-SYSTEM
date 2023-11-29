@@ -1,9 +1,7 @@
 import javax.swing.*;
-import javax.swing.JOptionPane;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
+
 
 
 public class Design extends JFrame implements ActionListener {
@@ -67,29 +65,15 @@ public class Design extends JFrame implements ActionListener {
         String password= passwordText.getText();
         System.out.println(user+"," + userID +","+password);
         if(user.equals("Urvi") && userID.equals("A1234") && password.equals("4321")){
-            success.setText("Login successful!");}
-            else success.setText("Login failed!");
-        System.out.println(user+"," + userID +","+password);
-        if(user.equals("Terry") && userID.equals("A1235") && password.equals("#20213")){
-            success.setText("Login successful!");}
-        else success.setText("Login failed!");
-        System.out.println(user+"," + userID +","+password);
-        if(user.equals("Vicky") && userID.equals("A1236") && password.equals("5050*")){
-            success.setText("Login successful!");}
-        else success.setText("Login failed!");
-        System.out.println(user+"," + userID +","+password);
-        if(user.equals("Susan") && userID.equals("13456") && password.equals("Haiya")){
-            success.setText("Login successful!");}
-        else success.setText("Login failed!");
-        if(user.equals("Joan") && userID.equals("13457") && password.equals("What(!)")){
-            success.setText("Login successful!");}
-        else success.setText("Login failed!");
-        if(user.equals("Leah") && userID.equals("13458") && password.equals("Y@")){
-            success.setText("Login successful!");}
-        else success.setText("Login failed!");
-
+            success.setText("Login successful!");
         }
-    }
+
+
+
+
+
+
+    }}
 
 
 

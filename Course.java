@@ -1,19 +1,25 @@
-public class Course extends Attendance{
-    private String name;
-    private String Coursecode;
+public class Course {
+    private String Coursename;
+    private Integer Coursecode;
 
-    public Course(String name,int admissionNumber,String StudentName,String Coursecode){
-        super(admissionNumber,StudentName);
-        this.name=name;
-        this.Coursecode=Coursecode;
+     Course(String Coursename,Integer Coursecode){
+
+        this.setCoursename(Coursename);
+        this.setCoursecode(Coursecode);
     }
-    public String getName(){
-        return name;
+    public String getCoursename(){
+        return Coursename;
     }
-    public String getCoursecode(){
+    public Integer getCoursecode(){
         return Coursecode;
     }
 
+    public void setCoursename(String coursename) {
+     this.Coursename = coursename;
+    }
 
+    public void setCoursecode(Integer coursecode) {
+        this.Coursecode=coursecode;
+    }
 }
 
